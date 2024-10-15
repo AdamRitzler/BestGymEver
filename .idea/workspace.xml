@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb1a0a39-bcfb-40d2-9130-a88f092c58db" name="Changes" comment="New project.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cb1a0a39-bcfb-40d2-9130-a88f092c58db" name="Changes" comment="la till en kommentar">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728975803929</updated>
-      <workItem from="1728975804980" duration="1710000" />
+      <workItem from="1728975804980" duration="1923000" />
     </task>
     <task id="LOCAL−00001" summary="New project">
       <option name="closed" value="true" />
@@ -70,15 +69,34 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1728976051390</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="la till en kommentar">
+      <option name="closed" value="true" />
+      <created>1728978991383</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1728978991383</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New project" />
     <MESSAGE value="New project." />
-    <option name="LAST_COMMIT_MESSAGE" value="New project." />
+    <MESSAGE value="la till en kommentar" />
+    <option name="LAST_COMMIT_MESSAGE" value="la till en kommentar" />
   </component>
 </project>
