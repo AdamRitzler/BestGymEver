@@ -8,29 +8,6 @@ public class Main {
 /*
 skapa en fil reader som läser av en fil och sedan tar från en input och jämför inputen med filen.
  */
-package sprint2.övning9;
-
-import java.io.BufferedReader;
-
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-
-        public class Person {
-            public Person() {
-            }
-
-            public static void main(String[] args) {
-                Person p = new Person();
-                p.TallPerson();
-            }
-            //bryt ut till en egen metod för att skicka längden
-            public boolean getHeight() {
-                boolean tallPersonTrue = true;
-                return tallPersonTrue;
-            }
-
-            public void TallPerson() {
 
                 String tempLine, heigth, lineheight;
                 int tempIndex;
@@ -43,7 +20,6 @@ import java.io.IOException;
 
 
                         if(Integer.parseInt(heigth.trim()) >= 200 ){
-                            tallPersonTrue= getHeight();
                             System.out.println(tallPersonTrue);
                             System.out.println(tempLine.substring(0, tempLine.indexOf(',')) + " " +  heigth.trim());
                         }
@@ -57,6 +33,3 @@ import java.io.IOException;
             }
 
         }
-
-    }
-}
