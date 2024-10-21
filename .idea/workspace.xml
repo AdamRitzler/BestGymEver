@@ -93,7 +93,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PersonInfoTest.getTimeDateTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="BestGymEver" />
@@ -142,9 +142,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PersonInfoTest.getTimeDateTest" />
-        <item itemvalue="JUnit.PersonInfoTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PersonInfoTest" />
+        <item itemvalue="JUnit.PersonInfoTest.getTimeDateTest" />
         <item itemvalue="JUnit.PersonInfoTest.printToPTFileTest" />
         <item itemvalue="JUnit.PersonInfoTest.testCorrectPtPrint" />
       </list>
