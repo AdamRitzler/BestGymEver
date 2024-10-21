@@ -16,7 +16,9 @@ skapa en fil reader som läser av en fil och sedan tar från en input och jämf�
             System.out.println("Vem är det som ska träna? \nSkriv \"exit\" för att avsluta");
             indata = scan.nextLine();
             if (indata.equalsIgnoreCase("exit")) {
+                System.out.println("Avslutar programmet");
                 System.exit(0);
+
             }
 
             PersonInfo p = new PersonInfo();
@@ -24,19 +26,20 @@ skapa en fil reader som läser av en fil och sedan tar från en input och jämf�
             member = p.getMember(indata);
             memberName = p.getName();
             if (!member) {
-                System.out.println("kunden har aldrig varit medlem ");
+                System.out.println("kunden har aldrig varit medlem \n");
                 continue;
             }
-            LocalDate t = LocalDate.now();
+            LocalDate todayDate = LocalDate.now();
             LocalDate paymentDate = LocalDate.parse(p.getDate());
-            Period d = Period.between(paymentDate, t);
-
+            Period d = Period.between(paymentDate, todayDate);
+            System.out.println(todayDate);
 
             if (member) {
                 if (d.getYears() < 1) {
-                    System.out.println(memberName + " är medlem");
+                    System.out.println(memberName + " är medlem\n");
+                    p.printToPTFile();
                 } else {
-                    System.out.println(p.getName() + " är en före detta medlem");
+                    System.out.println(p.getName() + " är en före detta medlem\n");
                 }
             }
 

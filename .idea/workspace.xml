@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb1a0a39-bcfb-40d2-9130-a88f092c58db" name="Changes" comment="kollar namn och personnummer i filen">
-      <change afterPath="$PROJECT_DIR$/test/PersonInfoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/data_inlamningsuppg2.txt" afterDir="false" />
+    <list default="true" id="cb1a0a39-bcfb-40d2-9130-a88f092c58db" name="Changes" comment="Rensade bort onödig kod">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestGymEver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestGymEver.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PersonInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/PersonInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/PersonInfoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +38,9 @@
     &quot;accountId&quot;: &quot;11690495-5760-4977-8625-3227e695b311&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -49,28 +50,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.PersonInfoTest.personInfoTest.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/Objektorienterad programmering/examinationsuppgift/BestGymEver/test&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.PersonInfoTest.getTimeDateTest.executor": "Run",
+    "JUnit.PersonInfoTest.getname.executor": "Run",
+    "JUnit.PersonInfoTest.personInfoTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/Objektorienterad programmering/examinationsuppgift/BestGymEver/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\Objektorienterad programmering\examinationsuppgift\BestGymEver\test" />
@@ -82,10 +85,30 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.PersonInfoTest.getTimeDateTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="BestGymEver" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonInfoTest.getTimeDateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestGymEver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PersonInfoTest" />
+      <option name="METHOD_NAME" value="getTimeDateTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonInfoTest.getname" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestGymEver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PersonInfoTest" />
+      <option name="METHOD_NAME" value="getname" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,8 +125,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PersonInfoTest.getTimeDateTest" />
+        <item itemvalue="JUnit.PersonInfoTest.getname" />
         <item itemvalue="JUnit.PersonInfoTest.personInfoTest" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +156,9 @@
       <workItem from="1729163666237" duration="8000" />
       <workItem from="1729163679957" duration="1021000" />
       <workItem from="1729164835411" duration="10474000" />
-      <workItem from="1729512379977" duration="6357000" />
+      <workItem from="1729512379977" duration="9264000" />
+      <workItem from="1729524804453" duration="2714000" />
+      <workItem from="1729528989425" duration="624000" />
     </task>
     <task id="LOCAL−00001" summary="New project">
       <option name="closed" value="true" />
@@ -189,7 +216,21 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1729167524935</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="Lagt till så att den kollar att kunden är eller har varit medlem. Har lagt till metoder för information om registrerade kunder">
+      <option name="closed" value="true" />
+      <created>1729522031695</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1729522031695</updated>
+    </task>
+    <task id="LOCAL−00010" summary="Rensade bort onödig kod">
+      <option name="closed" value="true" />
+      <created>1729522311444</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1729522311444</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +254,8 @@
     <MESSAGE value="tog bort test" />
     <MESSAGE value="test" />
     <MESSAGE value="kollar namn och personnummer i filen" />
-    <option name="LAST_COMMIT_MESSAGE" value="kollar namn och personnummer i filen" />
+    <MESSAGE value="Lagt till så att den kollar att kunden är eller har varit medlem. Har lagt till metoder för information om registrerade kunder" />
+    <MESSAGE value="Rensade bort onödig kod" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rensade bort onödig kod" />
   </component>
 </project>

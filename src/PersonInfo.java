@@ -1,26 +1,16 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.IllegalFormatException;
 
 public class PersonInfo {
     private String fullName, securityNum, lastPaymentDate;
 
-
-    //metod checkForPerson() för att stämma överäns namn eller person nummer med input
-    //persenalinfo = pers.get(i).split(",");
-
-    /*
-    gör en getName(), getSecurityNum(), getDate() metod
-     */
-
-    public ArrayList<String> personInfo() {
+    public ArrayList<String> personInfo(String input) {
         ArrayList<String> pers = new ArrayList<>();
         String tempFirstLine, lastYearlyPayment;
-        String[] persenalinfo;
-        try (BufferedReader buffern = new BufferedReader(new FileReader("src/data_inlamningsuppg2.txt"))) {
+
+        try (BufferedReader buffern = new BufferedReader(new FileReader(input))) {
             while ((tempFirstLine = buffern.readLine()) != null) {
                 lastYearlyPayment = buffern.readLine();
 
@@ -44,12 +34,12 @@ public class PersonInfo {
         String[] pName;
         ArrayList<String> personer;
         PersonInfo pers = new PersonInfo();
-        personer = pers.personInfo();
+        personer = pers.personInfo("src/data_inlamningsuppg2.txt");
         int n = 0;
         while (n <= personer.size()) {
             try {
                 pName = personer.get(n).split(",");
-                if(indataMedlem == null){
+                if (indataMedlem == null) {
                     return false;
                 } else if (pName[1].trim().equalsIgnoreCase(indataMedlem) || pName[0].trim().equalsIgnoreCase(indataMedlem)) {
                     this.fullName = pName[1].trim();
@@ -60,7 +50,7 @@ public class PersonInfo {
                 n++;
 
 
-            }catch (Exception e){
+            } catch (Exception e) {
                 return false;
             }
         }
@@ -81,5 +71,24 @@ public class PersonInfo {
 
     public String getSecurityNum() {
         return this.securityNum;
+    }
+
+    public String getTimeDate() {
+
+        LocalDateTime todayDateTime = LocalDateTime.now();
+        return todayDateTime.format(DateTimeFormatter.ofPattern("YYYY-MM-dd HH:mm:ss"));
+    }
+
+    public void printToPTFile() {
+        PersonInfo p = new PersonInfo();
+
+        try (PrintWriter printWriter = new PrintWriter(new FileWriter("personlig tränare",true))) {
+
+            printWriter.println("Kundens namn och personnummer: " + this.fullName + ", " + this.securityNum + ", Tid: " + p.getTimeDate());
+
+        } catch (IOException e) {
+            System.out.println("Error");
+            e.printStackTrace();
+        }
     }
 }
