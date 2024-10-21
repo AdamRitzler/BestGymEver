@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb1a0a39-bcfb-40d2-9130-a88f092c58db" name="Changes" comment="Rensade bort onödig kod">
+    <list default="true" id="cb1a0a39-bcfb-40d2-9130-a88f092c58db" name="Changes" comment="lagt till små fixar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PersonInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonInfo.java" afterDir="false" />
@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,7 +45,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2nSoO8ocmA2rzX6DX0FhrrSgeTT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,9 +56,12 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.PersonInfoTest.executor": "Run",
     "JUnit.PersonInfoTest.getTimeDateTest.executor": "Run",
     "JUnit.PersonInfoTest.getname.executor": "Run",
     "JUnit.PersonInfoTest.personInfoTest.executor": "Run",
+    "JUnit.PersonInfoTest.printToPTFileTest.executor": "Run",
+    "JUnit.PersonInfoTest.testCorrectPtPrint.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -81,6 +86,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\Objektorienterad programmering\examinationsuppgift\BestGymEver\src" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
@@ -89,6 +97,15 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="BestGymEver" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonInfoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestGymEver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PersonInfoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,21 +120,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonInfoTest.getname" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonInfoTest.printToPTFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestGymEver" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PersonInfoTest" />
-      <option name="METHOD_NAME" value="getname" />
+      <option name="METHOD_NAME" value="printToPTFileTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonInfoTest.personInfoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonInfoTest.testCorrectPtPrint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestGymEver" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PersonInfoTest" />
-      <option name="METHOD_NAME" value="personInfoTest" />
+      <option name="METHOD_NAME" value="testCorrectPtPrint" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,9 +143,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PersonInfoTest.getTimeDateTest" />
-        <item itemvalue="JUnit.PersonInfoTest.getname" />
-        <item itemvalue="JUnit.PersonInfoTest.personInfoTest" />
+        <item itemvalue="JUnit.PersonInfoTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PersonInfoTest.printToPTFileTest" />
+        <item itemvalue="JUnit.PersonInfoTest.testCorrectPtPrint" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +176,7 @@
       <workItem from="1729164835411" duration="10474000" />
       <workItem from="1729512379977" duration="9264000" />
       <workItem from="1729524804453" duration="2714000" />
-      <workItem from="1729528989425" duration="624000" />
+      <workItem from="1729528989425" duration="14746000" />
     </task>
     <task id="LOCAL−00001" summary="New project">
       <option name="closed" value="true" />
@@ -230,7 +248,14 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1729522311444</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="lagt till små fixar">
+      <option name="closed" value="true" />
+      <created>1729530809104</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1729530809104</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +281,7 @@
     <MESSAGE value="kollar namn och personnummer i filen" />
     <MESSAGE value="Lagt till så att den kollar att kunden är eller har varit medlem. Har lagt till metoder för information om registrerade kunder" />
     <MESSAGE value="Rensade bort onödig kod" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rensade bort onödig kod" />
+    <MESSAGE value="lagt till små fixar" />
+    <option name="LAST_COMMIT_MESSAGE" value="lagt till små fixar" />
   </component>
 </project>
