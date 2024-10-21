@@ -1,10 +1,7 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+
 import java.time.LocalDate;
 import java.time.Period;
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class Main {
@@ -13,8 +10,6 @@ public class Main {
 skapa en fil reader som läser av en fil och sedan tar från en input och jämför inputen med filen.
  */
         Scanner scan = new Scanner(System.in);
-        String[] memberInfo;
-        String readFil = "src/data_inlamningsuppg2.txt";
         String indata, memberName;
         boolean member;
         while (true) {
@@ -40,7 +35,7 @@ skapa en fil reader som läser av en fil och sedan tar från en input och jämf�
             if (member) {
                 if (d.getYears() < 1) {
                     System.out.println(memberName + " är medlem");
-                } else if (d.getYears() >= 1) {
+                } else {
                     System.out.println(p.getName() + " är en före detta medlem");
                 }
             }

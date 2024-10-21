@@ -71,40 +71,12 @@ public class PersonInfo {
 
     public String getName() {
         return this.fullName;
-        /*
-        String[] pName;
-        ArrayList<String> personer;
-        PersonInfo pers = new PersonInfo();
-        personer = pers.personInfo();
-        int n = 0;
-        while(n <= personer.size()) {
-            pName = personer.get(n).split(",");
-            if (pName[1].trim().equalsIgnoreCase(indataMedlem)|| pName[0].trim().equalsIgnoreCase(indataMedlem)) {
-                return pName[1].trim();
-            }else {
-                n++;
-            }
-        }
-         */
+
     }
 
     public String getDate() {
         return this.lastPaymentDate;
-        /*
-        String[] pName;
-        ArrayList<String> personer;
-        PersonInfo pers = new PersonInfo();
-        personer = pers.personInfo();
-        int n = 0;
-        while(n <= personer.size()) {
-            pName = personer.get(n).split(",");
-            if (pName[1].trim().equalsIgnoreCase(indataMedlem)|| pName[0].trim().equalsIgnoreCase(indataMedlem)) {
-                return pName[2].trim();
-            }else {
-                n++;
-            }
-        }
-         */
+
     }
 
     public String getSecurityNum() {
