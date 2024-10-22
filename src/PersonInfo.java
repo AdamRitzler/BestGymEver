@@ -1,5 +1,7 @@
 import java.io.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
@@ -101,5 +103,19 @@ public class PersonInfo {
             System.out.println("Error");
             e.printStackTrace();
         }
+
+
+    }
+    public boolean checkActivCutomer(){
+        LocalDate todayDate = LocalDate.now();
+        LocalDate paymentDate = LocalDate.parse(this.getDate());
+        Period d = Period.between(paymentDate, todayDate);
+        if (d.getYears() < 1) {
+            return true;
+        }else {
+            return false;
+        }
+
+
     }
 }

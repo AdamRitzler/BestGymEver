@@ -42,7 +42,7 @@ class PersonInfoTest {
         LocalDateTime timeDateNow = LocalDateTime.now();
         String lastLineInFile, fileName = "src/personlig tränare";
         lastLineInFile = printToPTFile("Alhambra Aromes", fileName);
-        assertEquals("Kundens namn och personnummer: Alhambra Aromes, 7703021234, Tid: " + timeDateNow.format(DateTimeFormatter.ofPattern("YYYY-MM-dd HH:mm:ss")), lastLineInFile);
+        assertEquals("Kundens namn och personnummer: Alhambra Aromes, 7703021234, Tid: " + timeDateNow.format(DateTimeFormatter.ofPattern("YYYY-MM-dd HH:mm:ss") ), lastLineInFile);
 
         lastLineInFile = printToPTFile("Diamanda Djedi", fileName);
         assertEquals("Kundens namn och personnummer: Diamanda Djedi, 7608021234, Tid: " + timeDateNow.format(DateTimeFormatter.ofPattern("YYYY-MM-dd HH:mm:ss")), lastLineInFile);
@@ -69,6 +69,36 @@ class PersonInfoTest {
             e.printStackTrace();
         }
         return lastLine;
+    }
+    @Test
+    public void isCustomerTest(){
+        boolean isCustomer;
+
+        isCustomer = p.getMember("Alhambra Aromes");
+        //är registrerad kund
+        assertEquals(true, isCustomer);
+        assertNotEquals(false, isCustomer);
+
+        //är inte kund
+        isCustomer = p.getMember("Adam Ritzler");
+        assertEquals(false,isCustomer);
+
+    }
+    @Test
+    public void activeMedlemskapTest(){
+        p.getMember("Alhambra Aromes");
+        boolean activCostumer;
+
+        //har ett aktivt medlemskap
+        activCostumer = p.checkActivCutomer();
+        assertEquals(true, activCostumer);
+        assertNotEquals(false,activCostumer);
+
+        p.getMember("Bear Belle");
+        //är en föredetta medlem
+        activCostumer = p.checkActivCutomer();
+        assertEquals(false,activCostumer);
+        assertNotEquals(true,activCostumer);
     }
 
 

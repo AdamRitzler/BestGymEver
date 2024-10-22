@@ -32,9 +32,9 @@ public class Main {
             LocalDate todayDate = LocalDate.now();
             LocalDate paymentDate = LocalDate.parse(p.getDate());
             Period d = Period.between(paymentDate, todayDate);
-
+boolean iscustomer = p.checkActivCutomer();
             //kollar om kunden har betalat inom ett år och då ör fortfarande medlem
-            if (d.getYears() < 1) {
+            if (iscustomer) {
                 System.out.println(p.getName() + " är medlem\n");
                 p.printToPTFile(ptFileName);//anropar metoden för att skriva in i tränarens fil när kunden va och tränade
             } else {
